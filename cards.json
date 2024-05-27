@@ -1,0 +1,45 @@
+{
+  "commonCards": [
+    { "name": "Hei Hei", "image": "images/amber/HeiHei_BoatSnack.jpg", "ink": "amber", "rarity": "common" },
+    { "name": "Minnie Mouse", "image": "images/amber/MinnieMouse_BelovedPrincess.jpg", "ink": "amber", "rarity": "common" },
+    { "name": "Mr. Smee", "image": "images/amber/MrSmee_LoyalFirstMate.jpg", "ink": "amber", "rarity": "common" },
+    { "name": "Pumbaa", "image": "images/amber/Pumbaa_FriendlyWarthog.jpg", "ink": "amber", "rarity": "common" },
+    { "name": "Sebastian", "image": "images/amber/Sebastian_CourtComposer.jpg", "ink": "amber", "rarity": "common" },
+    { "name": "Simba", "image": "images/amber/Simba_ProtectiveCub.jpg", "ink": "amber", "rarity": "common" },
+    { "name": "Archimedes", "image": "images/amethyst/Archimedes_HighlyEducatedOwl.jpg", "ink": "amethyst", "rarity": "common" },
+    { "name": "Aladdin", "image": "images/emerald/Aladdin_PrinceAli.jpg", "ink": "emerald", "rarity": "common" },
+    { "name": "Abu", "image": "images/ruby/Abu_MischievousMonkey.jpg", "ink": "ruby", "rarity": "common" },
+    { "name": "Aurora", "image": "images/sapphire/Aurora_BriarRose.jpg", "ink": "sapphire", "rarity": "common" },
+    { "name": "Aladdin", "image": "images/steel/Aladdin_CorneredSwordsman.jpg", "ink": "steel", "rarity": "common" }
+  ],
+  "uncommonCards": [
+    { "name": "Ariel", "image": "images/amber/Ariel_OnHumanLegs.jpg", "ink": "amber", "rarity": "uncommon" },
+    { "name": "Cinderella", "image": "images/amber/Cinderella_GentleAndKind.jpg", "ink": "amber", "rarity": "uncommon" },
+    { "name": "Goofy", "image": "images/amber/Goofy_Musketeer.jpg", "ink": "amber", "rarity": "uncommon" }
+  ],
+  "rareCards": [
+    { "name": "Hades", "image": "images/amber/Hades_KingOfOlympus.jpg", "rarity": "rare" },
+    { "name": "Hades", "image": "images/amber/Hades_LordOfTheUnderworld.jpg", "rarity": "rare" },
+    { "name": "Lilo", "image": "images/amber/Lilo_MakingAWish.jpg", "rarity": "rare" }
+  ],
+  "superRareCards": [
+    { "name": "Ariel", "image": "images/amber/Ariel_SpectacularSinger.jpg", "rarity": "superRare" }
+  ],
+  "legendaryCards": [
+    { "name": "Rapunzel", "image": "images/amber/Rapunzel_GiftedWithHealing.jpg", "rarity": "legendary" }
+  ],
+  "enchantedCards": [
+    { "name": "Hades", "image": "images/amber/Hades_KingOfOlympusEN.jpg", "rarity": "enchanted" },
+    { "name": "Stitch", "image": "images/amber/Stitch_CarefreeSurferEN.jpg", "rarity": "enchanted" },
+    { "name": "Elsa", "image": "images/amethyst/Elsa_SpiritOfWinterEN.jpg", "rarity": "enchanted" },
+    { "name": "Mickey Mouse", "image": "images/amethyst/MickeyMouse_WaywardSorcererEN.jpg", "rarity": "enchanted" },
+    { "name": "Genie", "image": "images/emerald/Genie_OnTheJobEN.jpg", "rarity": "enchanted" },
+    { "name": "Mickey Mouse", "image": "images/emerald/MickeyMouse_ArtfulRogueEN.jpg", "rarity": "enchanted" },
+    { "name": "Aladdin", "image": "images/ruby/Aladdin_HeroicOutlawEN.jpg", "rarity": "enchanted" },
+    { "name": "Maui", "image": "images/ruby/Maui_HeroToAllEN.jpg", "rarity": "enchanted" },
+    { "name": "Aurora", "image": "images/sapphire/Aurora_DreamingGuardianEN.jpg", "rarity": "enchanted" },
+    { "name": "Belle", "image": "images/sapphire/Belle_StrangeButSpecialEN.jpg", "rarity": "enchanted" },
+    { "name": "Simba", "image": "images/steel/Simba_ReturnedKingEN.jpg", "rarity": "enchanted" },
+    { "name": "Tinker Bell", "image": "images/steel/TinkerBell_GiantFairyEN.jpg", "rarity": "enchanted" }
+  ]
+}
