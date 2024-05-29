@@ -8,7 +8,13 @@
 </head>
 <body>
   <h1>Disney Lorcana Pack Generator</h1>
-  <button id="generatePackButton">Generate Pack</button>
+  <div id="setSelection">
+    <button class="setButton" data-set="set1.json"><img src="Logo/The_First_Chapter_logo.jpg" alt="Set 1"></button>
+    <button class="setButton" data-set="set2.json"><img src="Logo/Rise_of_the_Floodborn_logo.jpg" alt="Set 2"></button>
+    <button class="setButton" data-set="set3.json"><img src="Logo/Into_the_Inklands_logo.jpg" alt="Set 3"></button>
+    <button class="setButton" data-set="set4.json"><img src="Logo/Ursula's_Return_logo.jpg" alt="Set 4"></button>
+  </div>
+  <button id="generatePackButton" style="display: none;">Generate Pack</button>
   <div id="packDisplay"></div>
 </body>
 </html>

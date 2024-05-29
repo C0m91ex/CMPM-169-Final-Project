@@ -13,6 +13,54 @@ p {
   color: #4682b4;
 }
 
+#setSelection {
+  margin-bottom: 20px;
+}
+
+#setSelection button {
+  background: #333;
+  border: 2px solid transparent;
+  cursor: pointer;
+  margin: 10px;
+  padding: 10px;
+  border-radius: 10px;
+  transition: border 0.3s, background 0.3s;
+}
+
+#setSelection button img {
+  width: 100px;
+  height: auto;
+  border-radius: 5px;
+}
+
+#setSelection button.selected {
+  border-color: #FFD700;
+  background: #444;
+}
+
+#buttonContainer {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+#generatePackButton {
+  margin: 20px auto; /* Set margin to create space at the top and center horizontally */
+  padding: 15px 30px;
+  font-size: 18px;
+  background-color: #4682b4;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.3s;
+}
+
+#generatePackButton:hover {
+  background-color: #5a9bd3;
+  transform: scale(1.05);
+}
+
 #packDisplay {
   display: grid;
   grid-template-columns: repeat(6, 1fr);

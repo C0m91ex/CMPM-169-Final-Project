@@ -1,17 +1,40 @@
 let cardData;
+let selectedSet;
 
 function preload() {
-  cardData = loadJSON('cards.json');
+  // Do not load JSON here as it will be dynamically loaded based on selection
 }
 
 function setup() {
   noCanvas();
-  let button = select('#generatePackButton');
-  button.mousePressed(displayPack);
-  console.log("Setup complete, button ready.");
+  
+  let setButtons = selectAll('.setButton');
+  setButtons.forEach(button => {
+    button.mousePressed(() => {
+      selectedSet = button.attribute('data-set');
+      loadSet(selectedSet);
+      setButtons.forEach(btn => btn.removeClass('selected'));
+      button.addClass('selected');
+    });
+  });
+  
+  let generateButton = select('#generatePackButton');
+  generateButton.mousePressed(displayPack);
+  console.log("Setup complete, buttons ready.");
+}
+
+function loadSet(set) {
+  loadJSON(set, data => {
+    cardData = data;
+    let generateButton = select('#generatePackButton');
+    generateButton.style('display', 'block');
+    console.log(`Loaded set: ${set}`);
+  });
 }
 
 function displayPack() {
+  if (!cardData) return;
+  
   let pack = generatePack();
   let packDisplay = select('#packDisplay');
   packDisplay.html(''); // Clear previous pack display
@@ -43,51 +66,50 @@ function displayPack() {
 
 function generatePack() {
   let pack = [];
-  
-  // Add one common card of each ink color
-  let inkColors = ["amber", "amethyst", "emerald", "ruby", "sapphire", "steel"];
-  inkColors.forEach(ink => {
-    let filteredCommonCards = cardData.commonCards.filter(card => card.ink === ink);
-    pack.push(randomCard(filteredCommonCards));
-  });
+  let selectedColors = new Set();
 
-  // Add remaining common cards
-  for (let i = 0; i < 6 - inkColors.length; i++) {
-    pack.push(randomCard(cardData.commonCards));
+  // Add common cards (1 from each ink color)
+  while (selectedColors.size < 6) {
+    let randomIndex = floor(random(cardData.commonCards.length));
+    let card = cardData.commonCards[randomIndex];
+    if (!selectedColors.has(card.ink)) {
+      pack.push(card);
+      selectedColors.add(card.ink);
+    }
   }
 
   // Add uncommon cards
-  pack = pack.concat(generateRandomCards(cardData.uncommonCards, 3));
+  for (let i = 0; i < 3; i++) {
+    let randomIndex = floor(random(cardData.uncommonCards.length));
+    pack.push(cardData.uncommonCards[randomIndex]);
+  }
 
-  // Add 2 rare/super rare/legendary cards
-  let rareCards = cardData.rareCards.concat(cardData.superRareCards, cardData.legendaryCards);
-  pack = pack.concat(generateRandomCards(rareCards, 2));
+  // Add rare/super rare/legendary cards with 60/30/10 distribution
+  for (let i = 0; i < 2; i++) {
+    let rarityRoll = random(100);
+    if (rarityRoll < 10 && cardData.legendaryCards.length > 0) {
+      let randomIndex = floor(random(cardData.legendaryCards.length));
+      pack.push(cardData.legendaryCards[randomIndex]);
+    } else if (rarityRoll < 40 && cardData.superRareCards.length > 0) {
+      let randomIndex = floor(random(cardData.superRareCards.length));
+      pack.push(cardData.superRareCards[randomIndex]);
+    } else if (cardData.rareCards.length > 0) {
+      let randomIndex = floor(random(cardData.rareCards.length));
+      pack.push(cardData.rareCards[randomIndex]);
+    }
+  }
 
   // Add foil card
-  let allCards = cardData.commonCards.concat(cardData.uncommonCards, rareCards);
-  let foilCard = randomCard(allCards);
-  
-  // Check for Enchanted card chance
-  if (random(1) < .01) {
-    foilCard = randomCard(cardData.enchantedCards);
+  let foilOptions = cardData.commonCards.concat(cardData.uncommonCards, cardData.rareCards, cardData.superRareCards, cardData.legendaryCards);
+  let foilCard = foilOptions[floor(random(foilOptions.length))];
+
+  // 1 in 100 chance to pull an enchanted card
+  if (random(100) < 1 && cardData.enchantedCards.length > 0) {
+    foilCard = cardData.enchantedCards[floor(random(cardData.enchantedCards.length))];
   }
-  
   pack.push(foilCard);
 
   return pack;
-}
-
-function generateRandomCards(cardArray, count) {
-  let selectedCards = [];
-  for (let i = 0; i < count; i++) {
-    selectedCards.push(randomCard(cardArray));
-  }
-  return selectedCards;
-}
-
-function randomCard(cardArray) {
-  let randomIndex = floor(random(cardArray.length));
-  return cardArray[randomIndex];
 }
 
 function revealCard(index) {
