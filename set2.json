@@ -1,29 +1,29 @@
 {
   "commonCards": [
-    { "name": "Eudora", "image": "images2/amber/Eudora_AccomplishedSeamstress.jpg", "ink": "amber", "rarity": "common" },
-    { "name": "Grumpy", "image": "images2/amber/Grumpy_Bad-Tempered.jpg", "ink": "amber", "rarity": "common" },
-    { "name": "Chip The Teacup", "image": "images2/amethyst/ChipTheTeacup_GentleSoul.jpg", "ink": "amethyst", "rarity": "common" },
-    { "name": "Arthur", "image": "images2/emerald/Arthur_TrainedSwordsman.jpg", "ink": "emerald", "rarity": "common" },
-    { "name": "Baloo", "image": "images2/ruby/Baloo_Fun-LovingBear.jpg", "ink": "ruby", "rarity": "common" },
-    { "name": "Basil", "image": "images2/sapphire/Basil_OfBakerStreet.jpg", "ink": "sapphire", "rarity": "common" },
-    { "name": "Beast", "image": "images2/steel/Beast_ForbiddingRecluse.jpg", "ink": "steel", "rarity": "common" }
+    { "name": "Eudora", "image": "images2/Amber/Eudora_AccomplishedSeamstress.jpg", "ink": "amber", "rarity": "common" },
+    { "name": "Grumpy", "image": "images2/Amber/Grumpy_Bad-Tempered.jpg", "ink": "amber", "rarity": "common" },
+    { "name": "Chip The Teacup", "image": "images2/Amethyst/ChipTheTeacup_GentleSoul.jpg", "ink": "amethyst", "rarity": "common" },
+    { "name": "Arthur", "image": "images2/Emerald/Arthur_TrainedSwordsman.jpg", "ink": "emerald", "rarity": "common" },
+    { "name": "Baloo", "image": "images2/Ruby/Baloo_Fun-LovingBear.jpg", "ink": "ruby", "rarity": "common" },
+    { "name": "Basil", "image": "images2/Sapphire/Basil_OfBakerStreet.jpg", "ink": "sapphire", "rarity": "common" },
+    { "name": "Beast", "image": "images2/Steel/Beast_ForbiddingRecluse.jpg", "ink": "steel", "rarity": "common" }
   ],
   "uncommonCards": [
-    { "name": "Bashful", "image": "images2/amber/Bashful_HopelessRomantic.jpg", "ink": "amber", "rarity": "uncommon" },
-    { "name": "Doc", "image": "images2/amber/Doc_LeaderoftheSevenDwarfs.jpg", "ink": "amber", "rarity": "uncommon" },
-    { "name": "Dopey", "image": "images2/amber/Dopey_AlwaysPlayful.jpg", "ink": "amber", "rarity": "uncommon" }
+    { "name": "Bashful", "image": "images2/Amber/Bashful_HopelessRomantic.jpg", "ink": "amber", "rarity": "uncommon" },
+    { "name": "Doc", "image": "images2/Amber/Doc_LeaderoftheSevenDwarfs.jpg", "ink": "amber", "rarity": "uncommon" },
+    { "name": "Dopey", "image": "images2/Amber/Dopey_AlwaysPlayful.jpg", "ink": "amber", "rarity": "uncommon" }
   ],
   "rareCards": [
-    { "name": "Chief Bogo", "image": "images2/steel/ChiefBogo_RespectedOfficer.jpg", "rarity": "rare" }
+    { "name": "Chief Bogo", "image": "images2/Steel/ChiefBogo_RespectedOfficer.jpg", "rarity": "rare" }
   ],
   "superRareCards": [
-    { "name": "Beast", "image": "images2/steel/Beast_SelflessProtector.jpg", "rarity": "superRare" }
+    { "name": "Beast", "image": "images2/Steel/Beast_SelflessProtector.jpg", "rarity": "superRare" }
   ],
   "legendaryCards": [
-    { "name": "Beast", "image": "images2/steel/Beast_TragicHero.jpg", "rarity": "legendary" }
+    { "name": "Beast", "image": "images2/Steel/Beast_TragicHero.jpg", "rarity": "legendary" }
   ],
   "enchantedCards": [
-    { "name": "Cinderella", "image": "images2/amber/Cinderella_BallroomSensationEN.jpg", "rarity": "enchanted" },
-    { "name": "Snow White", "image": "images2/amber/SnowWhite_WellWisherEN.jpg", "rarity": "enchanted" }
+    { "name": "Cinderella", "image": "images2/Amber/Cinderella_BallroomSensationEN.jpg", "rarity": "enchanted" },
+    { "name": "Snow White", "image": "images2/Amber/SnowWhite_WellWisherEN.jpg", "rarity": "enchanted" }
   ]
 }
