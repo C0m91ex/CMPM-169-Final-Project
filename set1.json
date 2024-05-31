@@ -76,7 +76,7 @@
     { "name": "Just In Time", "image": "images/Amber/Rare/JustInTime.jpg", "rarity": "rare" },
     { "name": "Part Of Your World", "image": "images/Amber/Rare/PartOfYourWorld.jpg", "rarity": "rare" },
     { "name": "Lantern", "image": "images/Amber/Rare/Lantern.jpg", "rarity": "rare" },
-    { "name": "Ursula's Shell Necklace", "image": "images/Amber/Rare/Lantern.jpg", "rarity": "rare" },
+    { "name": "Ursula's Shell Necklace", "image": "images/Amber/Rare/UrsulasShellNecklace.jpg", "rarity": "rare" },
     { "name": "Dr. Facilier", "image": "images/Amethyst/Rare/Dr.Facilier_AgentProvocateur.jpg", "rarity": "rare" },
     { "name": "Dr. Facilier", "image": "images/Amethyst/Rare/Dr.Facilier_RemarkableGentleman.jpg", "rarity": "rare" },
     { "name": "Flotsam", "image": "images/Amethyst/Rare/Flotsam_UrsulasSpy.jpg", "rarity": "rare" },
