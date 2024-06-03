@@ -2,7 +2,6 @@ let cardData;
 let selectedSet;
 
 function preload() {
-  // Do not load JSON here as it will be dynamically loaded based on selection
 }
 
 function setup() {
