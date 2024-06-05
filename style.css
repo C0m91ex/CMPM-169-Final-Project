@@ -169,3 +169,44 @@ p {
       box-shadow: 0 0 20px 5px violet;
   }
 }
+
+body {
+  font-family: Arial, sans-serif;
+  text-align: center;
+  background-color: #1f1e1e;
+  color: #333333;
+}
+
+h2 {
+  color: #ffffff;
+}
+
+p {
+  color: #ffffff;
+}
+
+a {
+  color: #4682b4;
+}
+
+a:hover {
+  color: #386991;
+}
+
+#disclaimerLink {
+  position: fixed;
+  bottom: 25px;
+  left: 35px;
+  color: #ffffff;
+  text-decoration: none;
+  font-size: 18px;
+}
+
+#creditsLink {
+  position: fixed;
+  bottom: 25px;
+  left: 150px;
+  color: #ffffff;
+  text-decoration: none;
+  font-size: 18px;
+}
