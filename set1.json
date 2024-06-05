@@ -41,7 +41,7 @@
     { "name": "Elsa", "image": "images/Ruby/Common/Elsa_IceSurfer.jpg", "ink": "ruby", "rarity": "common" },
     { "name": "Gaston", "image": "images/Ruby/Common/Gaston_ArrogantHunter.jpg", "ink": "ruby", "rarity": "common" },
     { "name": "Goofy", "image": "images/Ruby/Common/Goofy_Daredevil.jpg", "ink": "ruby", "rarity": "common" },
-    { "name": "Minnie Mouse", "image": "images/Ruby/Common/MinnieMouse_ALwaysClassy.jpg", "ink": "ruby", "rarity": "common" },
+    { "name": "Minnie Mouse", "image": "images/Ruby/Common/MinnieMouse_AlwaysClassy.jpg", "ink": "ruby", "rarity": "common" },
     { "name": "Peter Pan", "image": "images/Ruby/Common/PeterPan_FearlessFighter.jpg", "ink": "ruby", "rarity": "common" },
     { "name": "Pongo", "image": "images/Ruby/Common/Pongo_Ol'Rascal.jpg", "ink": "ruby", "rarity": "common" },
     { "name": "Scar", "image": "images/Ruby/Common/Scar_FieryUsurper.jpg", "ink": "ruby", "rarity": "common" },
