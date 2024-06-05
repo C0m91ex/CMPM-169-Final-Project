@@ -67,7 +67,7 @@ function generatePack() {
   let pack = [];
   let selectedColors = new Set();
 
-  // Add common cards (1 from each ink color)
+  // common cards (1 from each ink color)
   while (selectedColors.size < 6) {
     let randomIndex = floor(random(cardData.commonCards.length));
     let card = cardData.commonCards[randomIndex];
@@ -77,13 +77,13 @@ function generatePack() {
     }
   }
 
-  // Add uncommon cards
+  // uncommon cards
   for (let i = 0; i < 3; i++) {
     let randomIndex = floor(random(cardData.uncommonCards.length));
     pack.push(cardData.uncommonCards[randomIndex]);
   }
 
-  // Add rare/super rare/legendary cards with 60/30/10 distribution
+  // rare/super rare/legendary cards with 60/30/10 distribution
   for (let i = 0; i < 2; i++) {
     let rarityRoll = random(100);
     if (rarityRoll < 10 && cardData.legendaryCards.length > 0) {
@@ -98,7 +98,7 @@ function generatePack() {
     }
   }
 
-  // Add foil card
+  // foil card
   let foilOptions = cardData.commonCards.concat(cardData.uncommonCards, cardData.rareCards, cardData.superRareCards, cardData.legendaryCards);
   let foilCard = foilOptions[floor(random(foilOptions.length))];
 
